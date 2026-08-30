@@ -38,6 +38,16 @@ Durations accept plain milliseconds (`300000`) or multiplication chains (`5*60*1
 State (handles, streaks, daily problem, past problems) lives in `data/`
 (gitignored, mounted as a volume in Docker).
 
+## Git hooks
+
+After cloning the repository, enable the tracked Git hooks once:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+This setting is local to each clone and remains active after pulls.
+
 ## Docker
 
 ```
